@@ -25,6 +25,7 @@ echo "-> User: ${INPUT_COMMIT_USERNAME}"
 echo "-> Email: ${INPUT_COMMIT_EMAIL}"
 git config --global user.email "${INPUT_COMMIT_EMAIL}"
 git config --global user.name "${INPUT_COMMIT_USERNAME}"
+git config --global --add safe.directory /wiki
 
 echo "Commit..."
 echo "-> Message: ${INPUT_COMMIT_MESSAGE}"
